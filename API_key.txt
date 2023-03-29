@@ -1,0 +1,63 @@
+Spreedly
+API Key:
+CEKQ3KZYfHNHpPWPclE1vr06i6e
+Access Secret:
+p0YhsWh1DggGXSBhDC9T7uz2CXpAakC1K3laiJOpSMiLqJtqYU2NREtRivMES4Wl
+
+//AKIAIUITTIYJRYJADZ6A t8KUARGHVss1eDDdeCDoX8pg3F77xXK0h4NLus4B
+
+Airtable 
+API Key:
+key3tB0AQxBizfnuk
+
+
+https://studio.restlet.com/apis/52a0aace-7c65 -462b-a478-4ba57b4a6782/resources/~2Fcheckout/operations/post
+https://airtable.com/appNkcSCi8NjnCivJ/api/docs#nodejs/table:customers:create
+
+///////////////////////////////
+there are 3 main methods for this service
+
+/checkout
+     - Receives POST data and inserts into Sprredly and Airtable
+/checkout/add
+    - Adds new items to Order via POSt
+/checkout/charge
+    - Creates a charge for total amount of order to stored payment from step 1
+
+
+//////////////////////////////
+so just to quickly go over it
+> /checkout captures that data from form POST
+
+> Card is stored in Spreedly and payment token gets returned then we store this in Airtable as a Payments record
+
+> Customer, Order with Authorized status and Order items are created in Airtable
+
+> When user is in an upsell step and calls /checkout/add then more items get added to the order
+
+> When we call /checkout/charge then the total of order sum in the specified currency gets charged using Spreedly and the returned token that was stored in Airtable
+
+> Customer and Order gets inserted in Shopify when all is confirmed and changed Status to Order in Airtable to Paid in the Order item from Authorized
+
+//////////////////////////////////////////
+
+AWS KEYS:
+
+User
+dev-admin
+Access Key
+AKIAIYT5JFZWWXVWSFBA
+Secret
+iimJV00Df9sE9ZglylTV/yFOsnnTNI/gDZ779YcL
+
+/////////////////////////////////////////
+
+https://minicabit.signin.aws.amazon.com/console?? ??? ??? ?????? minicabit: company name
+
+Please send me the console login URL.
+
+
+sign in url https://285860894941.signin.aws.amazon.com/console
+sjang / ajang@4534#
+
+////////////////////////////////////

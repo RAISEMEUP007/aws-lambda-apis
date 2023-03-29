@@ -1,0 +1,133 @@
+{
+	"Customers":{
+		"Name":"John Deo",
+		"First Name":"John",
+		"Last Name":"Deo",
+		"Email":"john.deo@email.com",
+		"Phone":"1234567890",
+		"Address":"123 street",
+		"City":"Chicago",
+		"State":"Illinois",
+		"Country":"US",
+		"Postal Code":"60654",
+		"Orders":"//2",
+		"Customer ID":"64",
+		"Date Created":"8/4/2017 05:50",
+		"Payment":"//Payment #4"
+	},
+
+	"Payment":{
+		"Name":"//Payment#4",
+		"Customer":"//John Doe",
+		"Payment ID":"PAY123A",
+		"Token":"83GpUd8CcWJAIYoiTw",
+		"Type":"Spreedly",
+		"Order ID":"//2"
+	},
+
+	"Orders":{
+		"Order":"//2",
+		"Customer":"//John Doe",
+		"Status":"Paid",
+		"Date":"//8/4/2017 13:51",
+		"Order Items":"//PRO Controller",
+		"Shipping":"POST",
+		"Currency":"USD",
+		"Payment":"//Payment #4"
+	},
+
+	"Order Items":{
+		"Name":"PRO Controller",
+		"Order":"2",
+		"Product":"//PRO Controller",
+		"Quantity":"1",
+		"Currency":"USD",
+		"Price":"184.49"
+	}
+}
+
+
+/////////////////////////////////////////////
+{
+	"Customers": {
+		"Name": "Victor Ayon",
+		"First Name": "Victor",
+		"Last Name": "Ayon",
+		"Email": "victor@vertixone.com",
+		"Phone": "1234567890",
+		"Country": "saab",
+		"Address": "234 sdfsdf",
+		"City": "sdfsdf",
+		"State": "volvo",
+		"Postal Code": "34534",
+		"Date Created": "2017-08-04T05:51:28.053Z"
+	},
+
+	"Orders": {
+		"Customer": [
+	    	"rechqQrvfxP5gcWl1"
+  		],
+  		"Date": "2017-08-04T05:51:28.053Z",
+  		"Status": "Paid",
+  		"Shipping": "POST",
+  		"Currency": "USD"
+	},
+
+	"Order Items": [
+		{
+			"Name": "3 TVFrog",
+	  		"Product": [
+	    		"recjjWh9Mgf0Z5PkQ"
+	  		],
+	  		"Quantity": 1,
+	  		"Currency": "USD",
+	  		"Price": 184.49,
+	  		"Order": [
+	    		"rec5B6RHRpDbHAWZI"
+	  		]
+		},
+		{
+			"Name": "3 PRO Controller",
+	  		"Product": [
+	    		"recIcFQ1QGJUmEP7x"
+	  		],
+	  		"Quantity": 1,
+	  		"Currency": "USD",
+	  		"Price": 39.00,
+	  		"Order": [
+	    		"rec5B6RHRpDbHAWZI"
+	  		]
+		}
+	],
+
+	"Payment": {
+		"Name": "Test Payment",
+		"Customer": [
+    		"rechqQrvfxP5gcWl1"
+  		],
+  		"Payment ID": "PAY431B",
+  		"Token": "LPzz0bqnayjwGWCbKSx8SAMj1Pd",
+  		"Type": "Spreedly",
+  		"Order ID": [
+    		"rec5B6RHRpDbHAWZI"
+  		]
+	},
+
+	"payment_method": {
+	    "credit_card": {
+	      "first_name": "Victor",
+	      "last_name": "Ayon",
+	      "number": "5555555555554444",
+	      "phone_number":"1234567890",
+	      "verification_value": "423",
+	      "month": "3",
+	      "year": "2017",
+	      "street":"streetttt",
+	      "shipping_city": "hongkong",
+	      "shipping_zip": "83928",
+	      "shipping_country": "hongkong",
+	      "payment_method_type": "credit_card"      
+	    },
+	    "email": "joey@example.com"
+	  }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAkBC,sEAAsE",
+"sources": ["../sass/custom_variable.scss"],
+"names": [],
+"file": "custom_variable.css"
+}

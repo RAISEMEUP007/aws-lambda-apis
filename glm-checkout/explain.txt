@@ -1,0 +1,2 @@
+this glm-checkout is client's html page reference.
+Json data determined in here.

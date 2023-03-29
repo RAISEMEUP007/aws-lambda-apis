@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>index</title>
+
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9] -->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+  </head>
+    <body class="supernova">
+
+
+      <Section class="preheader">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#"><img src="img/supernovaxlogo.png" class="img-responsive center-block" alt="" width="300"></a>
+                </div>
+            </div>
+          </div>
+      </Section>
+
+
+      <!-- start tab section  -->
+
+      <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="box">
+
+                    <!--tab  -->
+
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                          <li role="presentation"><a href="#home">STEP 1: PLACE ORDER</a></li>
+                          <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">STEP 2: CUSTOMIZE ORDER</a></li>
+                          <li role="presentation"><a href="#messages">STEP 3: ORDER COMPLETE</a></li>
+
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane" id="home1">1</div>
+                          <div role="tabpanel" class="tab-pane active " id="profile">
+
+                              <div class="enjoy text-center">
+                                <h1>Enjoy Better Control & Longer Range with PRO Controller</h1>
+
+                                <h2>Flash SALE OFFER EXPIRES IN:</h2>
+
+                                <h3>Enjoy hours of FPV Flying and the possibility to use a Virtual Reality Mask with Your <br> Drone (VR Mask available in next step)</h3>
+
+                                <h3>$39 USD <span><del>($99 Retail)</del></span></h3>
+
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="text-center">
+                                      <section class="wrapper">
+                                        <section id="countdown-container" class="countdown-container">
+                                          <article id="js-countdown" class="countdown">
+                                            <section id="js-hours" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-minutes" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-seconds" class="number"></section>
+                                          </article>
+                                        </section>
+                                      </section>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-2"></div>
+                                  <div class="col-md-8">
+
+                                  
+
+                                    <div class="product">
+
+                                      <img src="img/remote-controller-selfie-drone.jpg" class="img-responsive center-block" alt="">
+
+
+                                      <button class="btn btn-default blockbtn" type="submit"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to Order</button>
+                                      <br>
+                                      <h4>  <a href="#">Add To Order - Just $39</a> $99</h4>
+
+                                      <p>All infromation is encrypted and transmitted <br>
+                                        without risk using a Secure Sockets Layer Protocol.</p>
+
+                                        <div class="thanks"><a href="#">No Thanks, I don't need this now</a></div>
+                                    </div>
+
+                                  </div>
+                                  <div class="col-md-2"></div>
+                                </div>
+
+                              </div>
+
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="messages1">1.</div>
+
+                        </div>
+
+                      </div>
+
+                    <!-- tab -->
+
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <!-- End tab section  -->
+
+
+
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script>
+          $(function() {
+
+            var targetDate  = new Date(Date.UTC(2017, 00, 27, 12, 15));
+            var now   = new Date();
+
+            window.days = daysBetween(now, targetDate);
+            var secondsLeft = secondsDifference(now, targetDate);
+            window.hours = Math.floor(secondsLeft / 60 / 60);
+            secondsLeft = secondsLeft - (window.hours * 60 * 60);
+            window.minutes = Math.floor(secondsLeft / 60 );
+            secondsLeft = secondsLeft - (window.minutes * 60);
+            console.log(secondsLeft);
+            window.seconds = Math.floor(secondsLeft);
+
+            startCountdown();
+          });
+          var interval;
+
+          function daysBetween( date1, date2 ) {
+            //Get 1 day in milliseconds
+            var one_day=1000*60*60*24;
+
+            // Convert both dates to milliseconds
+            var date1_ms = date1.getTime();
+            var date2_ms = date2.getTime();
+
+            // Calculate the difference in milliseconds
+            var difference_ms = date2_ms - date1_ms;
+
+            // Convert back to days and return
+            return Math.round(difference_ms/one_day);
+          }
+
+          function secondsDifference( date1, date2 ) {
+            //Get 1 day in milliseconds
+            var one_day=1000*60*60*24;
+
+            // Convert both dates to milliseconds
+            var date1_ms = date1.getTime();
+            var date2_ms = date2.getTime();
+            var difference_ms = date2_ms - date1_ms;
+            var difference = difference_ms / one_day;
+            var offset = difference - Math.floor(difference);
+            return offset * (60*60*24);
+          }
+
+
+
+          function startCountdown() {
+            $('#input-container').hide();
+            $('#countdown-container').show();
+
+            displayValue('#js-days', window.days);
+            displayValue('#js-hours', window.hours);
+            displayValue('#js-minutes', window.minutes);
+            displayValue('#js-seconds', window.seconds);
+
+            interval = setInterval(function() {
+              if (window.seconds > 0) {
+                window.seconds--;
+                displayValue('#js-seconds', window.seconds);
+              } else {
+                // Seconds is zero - check the minutes
+                if (window.minutes > 0) {
+                  window.minutes--;
+                  window.seconds = 59;
+                  updateValues('minutes');
+                } else {
+                  // Minutes is zero, check the hours
+                  if (window.hours > 0)  {
+                    window.hours--;
+                    window.minutes = 59;
+                    window.seconds = 59;
+                    updateValues('hours');
+                  } else {
+                    // Hours is zero
+                    window.days--;
+                    window.hours = 23;
+                    window.minutes = 59;
+                    window.seconds = 59;
+                    updateValues('days');
+                  }
+                  // $('#js-countdown').addClass('remove');
+                  // $('#js-next-container').addClass('bigger');
+                }
+              }
+            }, 1000);
+          }
+
+
+          function updateValues(context) {
+            if (context === 'days') {
+              displayValue('#js-days', window.days);
+              displayValue('#js-hours', window.hours);
+              displayValue('#js-minutes', window.minutes);
+              displayValue('#js-seconds', window.seconds);
+            } else if (context === 'hours') {
+              displayValue('#js-hours', window.hours);
+              displayValue('#js-minutes', window.minutes);
+              displayValue('#js-seconds', window.seconds);
+            } else if (context === 'minutes') {
+              displayValue('#js-minutes', window.minutes);
+              displayValue('#js-seconds', window.seconds);
+            }
+          }
+
+          function displayValue(target, value) {
+            var newDigit = $('<span></span>');
+            $(newDigit).text(pad(value))
+              .addClass('new');
+            $(target).prepend(newDigit);
+            $(target).find('.current').addClass('old').removeClass('current');
+            setTimeout(function() {
+              $(target).find('.old').remove();
+              $(target).find('.new').addClass('current').removeClass('new');
+            }, 900);
+          }
+
+          function pad(number) {
+            return ("0" + number).slice(-2);
+          }
+        </script>
+    </body>
+</html>
